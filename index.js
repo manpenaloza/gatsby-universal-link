@@ -8,7 +8,6 @@ import { SectionLink } from "react-scroll-section";
    - A NORMAL EXTERNAL LINK (renders, if any other pattern is used)
 */
 export default function MultiLink(props) {
-  console.log("in local version");
   const internal = /^\/(?!\/)/.test(props.to);
   const scrollable = props.scrollToId;
 
