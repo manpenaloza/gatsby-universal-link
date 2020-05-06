@@ -20,16 +20,18 @@ export default function MultiLink(props) {
     );
 
   // if scrollable, render a proper react-scroll-section Link
-  if (scrollable)
+  if (scrollable) {
+    const { SectionLink, scrollToId, className, children } = props;
     return (
-      <SectionLink section={props.scrollToId}>
+      <SectionLink section={scrollToId}>
         {({ onClick }) => (
-          <a onClick={onClick} className={props.className}>
-            {props.children}
+          <a onClick={onClick} className={className}>
+            {children}
           </a>
         )}
       </SectionLink>
     );
+  }
 
   // else render a normal web link
   return (

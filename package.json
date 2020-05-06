@@ -11,6 +11,10 @@
     "GatsbyJS",
     "react-scroll-section"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manpenaloza/gatsby-universal-link"
+  },
   "author": "Manuel Penaloza",
   "license": "MIT",
   "peerDependencies": {
