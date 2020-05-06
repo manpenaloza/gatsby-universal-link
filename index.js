@@ -8,6 +8,7 @@ import { SectionLink } from "react-scroll-section";
    - A NORMAL EXTERNAL LINK (renders, if any other pattern is used)
 */
 export default function MultiLink(props) {
+  console.log("in local version");
   const internal = /^\/(?!\/)/.test(props.to);
   const scrollable = props.scrollToId;
 
@@ -21,12 +22,11 @@ export default function MultiLink(props) {
 
   // if scrollable, render a proper react-scroll-section Link
   if (scrollable) {
-    const { SectionLink, scrollToId, className, children } = props;
     return (
-      <SectionLink section={scrollToId}>
+      <SectionLink section={props.scrollToId}>
         {({ onClick }) => (
-          <a onClick={onClick} className={className}>
-            {children}
+          <a onClick={onClick} className={props.className}>
+            {props.children}
           </a>
         )}
       </SectionLink>
