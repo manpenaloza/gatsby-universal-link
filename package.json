@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-universal-link",
+  "version": "0.0.1",
+  "description": "A React component to render internal and external links in a GatsbyJS project. Depending on Props passed to this component, it either renders a Gatsby Link, a Weblink, or a Link compatible with the react-scroll-section package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gatsby",
+    "GatsbyJS",
+    "react-scroll-section"
+  ],
+  "author": "Manuel Penaloza",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.21.13",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scroll-section": "^1.3.0"
+  }
+}
