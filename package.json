@@ -18,9 +18,9 @@
   "author": "Manuel Penaloza",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.21.13",
+    "gatsby": "^2.21.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scroll-section": "^1.3.0"
+    "react-scroll-section": "^2.0.0"
   }
 }
