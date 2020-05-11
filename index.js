@@ -34,7 +34,7 @@ export default function MultiLink(props) {
 
   // else render a normal web link
   return (
-    <a href={props.to} className={props.className}>
+    <a href={props.to} className={props.className} {...props}>
       {props.children}
     </a>
   );
